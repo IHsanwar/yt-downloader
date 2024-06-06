@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+   <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h1>YouTube Downloader</h1>
+
+        <form action="/download" method="post" onsubmit="return showAlert()">
+            <input type="text" id="ytlink" name="ytlink" placeholder="Enter YouTube link here" required>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+    <script>
+    function showAlert() {
+        alert("File anda sudah siap");
+        return true; // Allow the form to submit after the alert
+    }
+    </script>
+</body>
+</html>
